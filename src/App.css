@@ -1,28 +1,95 @@
-.App {
+
+:focus {
+
+  outline: 7px solid yellow;
+}
+ 
+/*------------------------------------------Menu's CSS -------------------------------------------*/
+input  {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+ ul {
+
+color: white;
+cursor: pointer;
+  text-align: left;
+
+
+ }
+
+footer{
   text-align: center;
+
+}
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+    
+  height: 60px;
+   width: 50px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+  
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
 }
 
-.App-title {
-  font-size: 1.5em;
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
 }
 
-.App-intro {
-  font-size: large;
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+ 
+
+ /*///////////////////////////////////////////media//////////////////////////////////////*/
+
+/* Small viewpoint */
+@media only screen and (max-width: 500px){
+
+ul {
+font-size: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+}
+ 
+
+ /* Midum viewpoint */ 
+@media only screen and (min-width: 500px) and (max-width:1000px){ 
+
+
+
+
+}
+
+
+
+ /* Large viewpoint */
+@media only screen and (min-width: 1000px){
+
+
+
+
 }
