@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+ import React, { Component } from "react";
 import Location from "./Location";
 
 class TheMenu extends Component {
@@ -22,15 +22,20 @@ class TheMenu extends Component {
     this.props.alllocations.forEach(function(location) {
       // matches the searched term with any match,and use toLowerCase() so the search wont be case senstive
       if (location.longname.toLowerCase().indexOf(value.toLowerCase()) >= 0) {        
+       
         locations.push(location);
-      }  
+        location.marker.setVisible(true);
+      }  //end if  
+      else {
+        location.marker.setVisible(false);
+      } //end else
     });
 
     this.setState({
       locations: locations,
       searched: value
     });
-  }
+  } // end filterlocations()
 
   componentWillMount() {
     this.setState({
@@ -38,7 +43,12 @@ class TheMenu extends Component {
     });
   }
 
-   
+   whynotclosemenu(){
+alert("You can close the menu from the red icon (top left) to see the location better");
+
+
+
+   }
   render() {
     let locationlist = this.state.locations.map(function(listItem, index) {
       return (
@@ -60,7 +70,7 @@ class TheMenu extends Component {
           onChange={this.filterLocations}
           tabIndex="1"
         />
-        <ul role="list" tabIndex="2" >
+        <ul role="list" tabIndex="2" onClick={this.whynotclosemenu } >
           {this.state.suggestions && locationlist}
         </ul>
         <hr/>
