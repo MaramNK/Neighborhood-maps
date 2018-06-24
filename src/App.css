@@ -66,30 +66,9 @@ footer{
  /*///////////////////////////////////////////media//////////////////////////////////////*/
 
 /* Small viewpoint */
+
+/* Small viewpoint */
 @media only screen and (max-width: 500px){
-
-ul {
-font-size: 10px;
-
-}
-
+  ul {font-size: 20px;} 
 }
  
-
- /* Midum viewpoint */ 
-@media only screen and (min-width: 500px) and (max-width:1000px){ 
-
-
-
-
-}
-
-
-
- /* Large viewpoint */
-@media only screen and (min-width: 1000px){
-
-
-
-
-}
