@@ -243,9 +243,10 @@ let longname = location.name + " - " + location.address;
   render() {
     return (// making menu using 'react-burger-menu'
       <div>  
-      <Menu right noOverlay  
+      <Menu className={ "my-menu" }
+            right noOverlay  
             role="navigation"  
-            isOpen  = {false}
+            isOpen  = {true}
             //an icon the user can close/open menu by
             customBurgerIcon={ <img  
                                className= "bm-burger-button" 
