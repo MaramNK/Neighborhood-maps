@@ -245,7 +245,8 @@ let longname = location.name + " - " + location.address;
       <div>  
       <Menu right noOverlay  
             role="navigation"  
-            isOpen={ true }
+            isOpen  = {false}
+            //an icon the user can close/open menu by
             customBurgerIcon={ <img  
                                className= "bm-burger-button" 
                                src="http://www.stickpng.com/assets/images/588a64d2d06f6719692a2d0e.png" 
